@@ -54,7 +54,11 @@ var lib = {
 var ring = {
     
   encode : function ( pStrPlainText, pNumOffset ) {
-    
+    var aPlainTextChars = pStrPlainText.split("");
+    var fnTransform = function ( pCurrentValue, pIndex, pArray ) { 
+      return lib.fnTransformChar( pCurrentValue, pNumOffset, false );
+    };
+    return aPlainTextChars.map( fnTransform ).join("");
   },
     
   decode : function ( pStrCipherText, pNumOffset ) {
