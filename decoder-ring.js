@@ -32,7 +32,19 @@ var reference = {
 // library of helper functions
 var lib = {
   
-  
+  fnTransformChar : function ( pStrChar , pNumOffset , bModeDecode ) {
+    var bAlpha = /[a-z]/.test( pStrChar.toLowerCase() );
+    var bUpper = bAlpha && /[A-Z]/.test( pStrChar );
+    if ( bModeDecode ) pNumOffset = pNumOffset * -1 + 26;
+    var sTransformedChar = pStrChar;
+    var nAlphaIndex;
+    if ( bAlpha ) {
+      nAlphaIndex = reference.array.lower.indexOf( pStrChar.toLowerCase() );
+      sTransformedChar = reference.array.lower[ (nAlphaIndex + pNumOffset) % 26 ];
+    }
+    if ( bUpper ) sTransformedChar = sTransformedChar.toUpperCase();
+    return sTransformedChar;
+  }
   
 }
 
