@@ -1,3 +1,4 @@
+// collection of constants
 var reference = {
   array : {
     lower : [] ,
@@ -11,7 +12,7 @@ var reference = {
   }
 };
 
-
+// initialize constants
 ( function () {
   var nCharCode;
   // initialize "lower" array
@@ -27,8 +28,10 @@ var reference = {
 })();
 
 
+
+// decoder ring object
 var ring = {
-  
+    
   encode : function ( pStrPlainText, pNumOffset ) {
     
   },
