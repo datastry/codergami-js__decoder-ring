@@ -29,6 +29,15 @@ var reference = {
 
 
 
+// library of helper functions
+var lib = {
+  
+  
+  
+}
+
+
+
 // decoder ring object
 var ring = {
     
