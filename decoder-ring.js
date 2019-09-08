@@ -32,10 +32,9 @@ var reference = {
 // library of helper functions
 var lib = {
   
-  fnTransformChar : function ( pStrChar , pNumOffset , pBoolModeDecode ) {
+  fnTransformChar : function ( pStrChar , pNumOffset ) {
     var bAlpha = /[a-z]/.test( pStrChar.toLowerCase() );
     var bUpper = bAlpha && /[A-Z]/.test( pStrChar );
-    if ( pBoolModeDecode ) pNumOffset = pNumOffset * -1 + 26;
     var sTransformedChar = pStrChar;
     var nAlphaIndex;
     if ( bAlpha ) {
@@ -56,12 +55,13 @@ var ring = {
   encode : function ( pStrPlainText, pNumOffset ) {
     var aPlainTextChars = pStrPlainText.split("");
     var fnTransform = function ( pCurrentValue, pIndex, pArray ) { 
-      return lib.fnTransformChar( pCurrentValue, pNumOffset, false );
+      return lib.fnTransformChar( pCurrentValue, pNumOffset );
     };
     return aPlainTextChars.map( fnTransform ).join("");
   },
     
   decode : function ( pStrCipherText, pNumOffset ) {
+    pNumOffset = pNumOffset * -1 + 26;
     
   }
   
