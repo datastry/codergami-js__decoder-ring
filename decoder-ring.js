@@ -62,7 +62,7 @@ var ring = {
     
   decode : function ( pStrCipherText, pNumOffset ) {
     pNumOffset = pNumOffset * -1 + 26;
-    
+    return ring.encode( pStrCipherText, pNumOffset )
   }
   
 };
