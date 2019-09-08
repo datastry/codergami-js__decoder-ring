@@ -32,10 +32,10 @@ var reference = {
 // library of helper functions
 var lib = {
   
-  fnTransformChar : function ( pStrChar , pNumOffset , bModeDecode ) {
+  fnTransformChar : function ( pStrChar , pNumOffset , pBoolModeDecode ) {
     var bAlpha = /[a-z]/.test( pStrChar.toLowerCase() );
     var bUpper = bAlpha && /[A-Z]/.test( pStrChar );
-    if ( bModeDecode ) pNumOffset = pNumOffset * -1 + 26;
+    if ( pBoolModeDecode ) pNumOffset = pNumOffset * -1 + 26;
     var sTransformedChar = pStrChar;
     var nAlphaIndex;
     if ( bAlpha ) {
