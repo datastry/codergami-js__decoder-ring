@@ -1,10 +1,10 @@
 var ring = {
   
-  encode : function ( pStrPlainText, nOffset ) {
+  encode : function ( pStrPlainText, pNumOffset ) {
     
   },
     
-  decode : function ( pStrCipherText, nOffset ) {
+  decode : function ( pStrCipherText, pNumOffset ) {
     
   }
   
