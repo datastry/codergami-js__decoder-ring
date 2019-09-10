@@ -7,7 +7,7 @@
     <script type="text/javascript">
       function fnPrintText () { 
         var sText = document.forms.formDecoder.txtSource.value;
-        sText = "<pre>\n" + sText + "\n</pre>";
+        sText = "<pre style='color : #CCC ;'>\n" + sText + "\n</pre>";
         ifrOut.document.write( sText ); 
         ifrOut.document.close(); 
       } 
@@ -23,7 +23,7 @@
       </div>
       <div class="formControl output">
         <output>
-          <iframe name="ifrOut" srcdoc="<html><head><link rel='stylesheet' href='dark-mode.css'></head><body></body></html>"></iframe>
+          <iframe name="ifrOut" srcdoc=""></iframe>
         </output>
       </div>
     </form>
