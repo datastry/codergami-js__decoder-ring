@@ -1,4 +1,44 @@
 body {
+  margin : 0 ;
+  padding : 1ex ;
+}
+
+body, textarea {
   background-color : #333 ;
   color : #CCC ;
+}
+
+iframe {
+  border : solid 1px ;
+}
+
+.formControl {
+  border : dotted 1px ;
+}
+
+.formControl.text {
+  float : left ;
+}
+
+.formControl.submit {
+  position : absolute ;
+  width : 100vw ;
+  margin : 0 -1ex ;
+  padding-top : 4.5em ;
+  text-align : center ;
+  border : 0 ;
+}
+
+.formControl.output {
+  float : right ;
+}
+
+.formControl.text, .formControl.output {
+  height : 10em ;
+  width : 40% ;
+}
+
+.formControl.text *, .formControl.output * {
+  height : 100% ;
+  width : 100% ;
 }

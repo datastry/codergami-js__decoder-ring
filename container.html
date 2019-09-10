@@ -7,13 +7,13 @@
   </head>
   <body>
     <form name="formDecoder" action="javascript:void ( function(){ ifrOut.document.write('foo'); ifrOut.document.close(); } )();">
-      <div>
+      <div class="formControl text">
         <textarea name="txtSource"></textarea>
       </div>
-      <div>
+      <div class="formControl submit">
         <input type="submit" value="decode">
       </div>
-      <div>
+      <div class="formControl output">
         <output>
           <iframe name="ifrOut" srcdoc=""></iframe>
         </output>
