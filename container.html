@@ -4,9 +4,17 @@
     <title>Decoder Ring - Codergami</title>
     <link rel="stylesheet" href="dark-mode.css">
     <script src="decoder-ring.js"></script>
+    <script type="text/javascript">
+      function fnPrintText () { 
+        var sText = document.forms.formDecoder.txtSource.value;
+        sText = "<pre>\n" + sText + "\n</pre>";
+        ifrOut.document.write( sText ); 
+        ifrOut.document.close(); 
+      } 
+    </script>
   </head>
   <body>
-    <form name="formDecoder" action="javascript:void ( function(){ ifrOut.document.write('foo'); ifrOut.document.close(); } )();">
+    <form name="formDecoder" action="javascript:void fnPrintText();">
       <div class="formControl text">
         <textarea name="txtSource"></textarea>
       </div>
@@ -15,7 +23,7 @@
       </div>
       <div class="formControl output">
         <output>
-          <iframe name="ifrOut" srcdoc=""></iframe>
+          <iframe name="ifrOut" srcdoc="<html><head><link rel='stylesheet' href='dark-mode.css'></head><body></body></html>"></iframe>
         </output>
       </div>
     </form>

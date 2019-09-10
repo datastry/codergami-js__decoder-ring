@@ -13,7 +13,7 @@ iframe {
 }
 
 .formControl {
-  border : dotted 1px ;
+  // border : dotted 1px ;
 }
 
 .formControl.text {
@@ -27,6 +27,7 @@ iframe {
   padding-top : 4.5em ;
   text-align : center ;
   border : 0 ;
+  z-index : -1 ;
 }
 
 .formControl.output {
