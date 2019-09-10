@@ -6,5 +6,18 @@
     <script src="decoder-ring.js"></script>
   </head>
   <body>
+    <form name="formDecoder" action="javascript:void ( function(){ ifrOut.document.write('foo'); ifrOut.document.close(); } )();">
+      <div>
+        <textarea name="txtSource"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="decode">
+      </div>
+      <div>
+        <output>
+          <iframe name="ifrOut" srcdoc=""></iframe>
+        </output>
+      </div>
+    </form>
   </body>
 </html>
