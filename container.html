@@ -18,7 +18,14 @@
       <div class="formControl text">
         <textarea name="txtSource"></textarea>
       </div>
-      <div class="formControl submit">
+      <div class="formControl mainControls">
+        <fieldset>
+          <input type="radio" name="radioMode" id="radioModeEncode" value="encode">
+          <label for="radioModeEncode">encode</label>
+          <br>
+          <input type="radio" name="radioMode" id="radioModeDecode" value="decode" checked>
+          <label for="radioModeDecode">decode</label>          
+        </fieldset>
         <input type="submit" value="decode">
       </div>
       <div class="formControl output">

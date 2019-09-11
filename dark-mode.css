@@ -20,14 +20,21 @@ iframe {
   float : left ;
 }
 
-.formControl.submit {
+.formControl.mainControls {
   position : absolute ;
   width : 100vw ;
   margin : 0 -1ex ;
-  padding-top : 4.5em ;
+  padding-top : 2.5em ;
   text-align : center ;
   border : 0 ;
   z-index : -1 ;
+}
+
+.formControl.mainControls fieldset {
+  text-align : left ;
+  width : 11ex ;
+  margin : 0 auto ;
+  border : 0 ;
 }
 
 .formControl.output {
