@@ -30,7 +30,7 @@ iframe {
   padding-left : 0.3ex ;
   text-align : center ;
   // border : solid 1px ;
-  z-index : -1 ;
+  // z-index : -1 ;
 }
 
 .formControl.mainControls fieldset {
@@ -45,9 +45,13 @@ iframe {
   margin : auto 0 ;
 }
 
-.formControl.mainControls fieldset input {
+.formControl.mainControls fieldset input[type="radio"] {
   position : relative ;
   top : 0.2ex ;
+}
+
+.formControl.mainControls fieldset input[type="range"] {
+  width : 100% ;
 }
 
 .formControl.output {
