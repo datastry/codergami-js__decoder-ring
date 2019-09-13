@@ -1,6 +1,8 @@
 body {
   margin : 0 ;
   padding : 1ex ;
+  font-size : 125% ;
+  font-family : "sans serif";
 }
 
 body, textarea {
@@ -25,16 +27,27 @@ iframe {
   width : 100vw ;
   margin : 0 -1ex ;
   padding-top : 2.5em ;
+  padding-left : 0.3ex ;
   text-align : center ;
-  border : 0 ;
+  // border : solid 1px ;
   z-index : -1 ;
 }
 
 .formControl.mainControls fieldset {
   text-align : left ;
-  width : 11ex ;
+  width : 9.5ex ;
   margin : 0 auto ;
   border : 0 ;
+}
+
+.formControl.mainControls fieldset * {
+  // border : solid 1px ;
+  margin : auto 0 ;
+}
+
+.formControl.mainControls fieldset input {
+  position : relative ;
+  top : 0.2ex ;
 }
 
 .formControl.output {
