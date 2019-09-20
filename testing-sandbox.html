@@ -6,10 +6,11 @@
 -->
     <script src="codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/mbo.css">
     <script src="codemirror/mode/javascript/javascript.js"></script>
     <script type="text/javascript">
       function fnInit() {
-        var myCodeMirror = CodeMirror.fromTextArea( txa1 );
+        var myCodeMirror = CodeMirror.fromTextArea( txa1, { theme : "mbo" , lineNumbers : true } );
       }
       window.onload = fnInit;
     </script>
