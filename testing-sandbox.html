@@ -2,11 +2,19 @@
 <html>
   <head>
     <title>Testing Sandbox - Codergami</title>
-    <link rel="stylesheet" href="dark-mode.css">
-    <script src="decoder-ring.js"></script>
+<!--    <link rel="stylesheet" href="dark-mode.css">
+-->
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <script src="codemirror/mode/javascript/javascript.js"></script>
     <script type="text/javascript">
+      function fnInit() {
+        var myCodeMirror = CodeMirror.fromTextArea( txa1 );
+      }
+      window.onload = fnInit;
     </script>
   </head>
   <body>
+    <textarea id="txa1">var foo = "bar";</textarea>
   </body>
 </html>
